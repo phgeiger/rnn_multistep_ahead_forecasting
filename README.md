@@ -1,7 +1,7 @@
 Introduction
 ===
 
-This repo contains code for my [blog post on implementing time series multi-step ahead forecasts using recurrent neural networks in TensorFlow](http://geiger.onl/news/blog/2018/05/26/Implementing-time-series-multi-step-ahead-forecasts-using-recurrent-neural-networks-in-TensorFlow.html). A version of this blog can also be found below.
+This repo contains code for my [blog post on implementing time series multi-step ahead forecasts using recurrent neural networks in TensorFlow](http://geiger.onl/news/blog/2018/05/26/Implementing-time-series-multi-step-ahead-forecasts-using-recurrent-neural-networks-in-TensorFlow.html). A version of this blog can also be found below, see in particular the [high-level code comments](#code).
 
 
 Content
@@ -36,11 +36,9 @@ To predict multiple steps ahead using RNNs, various approaches have been propose
 
 Generally, for me it would be interesting if there are other, more principled, approaches, so please get in touch if you know of any.
 
-## Implementation and evaluation in TensorFlow
+## Implementation and evaluation in TensorFlow -- high-level documentation of the code <a name="code"></a>
 
 I implemented a first version of the recursive versus the joint approach in TF and applied it to data from our campus cafeteria which I mentioned above. Note that for now, I focused on intra-day forecasts, while the more generic use case for RNNs and the recursive approach would probably be between-day forecasts.
-
-The joint approach was straight forward to code, and I built on [8].
 
 The recursive approach was a bit more tricky and I haven't found a fully convinccing solution. I used the estimator API of TF. I coded one model function which has two "modes", distinguishable via parameters: (1) a classical 1-step ahead RNN (LSTM, to be specific) and (2) arbitrary steps ahead predictions based on the recursive approach. Then I train the model via (1), store the weights as a checkpoint, and define a new estimator based on the mode (2), but with the weights loaded from the training of (1).
 
