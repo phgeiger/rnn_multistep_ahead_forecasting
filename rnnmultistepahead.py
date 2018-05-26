@@ -8,7 +8,7 @@ Code/idea sources, among others:
 - https://www.quora.com/In-TensorFlow-given-an-RNN-is-it-possible-to-use-the-output-of-the-previous-time-step-as-input-for-the-current-time-step-during-the-training-phase-How
 - https://stackoverflow.com/questions/41123367/single-step-simulation-in-tensorflow-rnn
 
-Model/intuition:
+Model/intuition (note that currently no covariates are implemented):
 X_t (state) = f(X_{t-1}, W_t (covariate), noise)
 Y_t (observation) = g(X_t, noise)
 """
