@@ -20,7 +20,7 @@ Recently I started to use recursive neural networks (RNNs) in TensorFlow (TF) fo
 
 To give a specific example of the problem: for our Max Planck Tuebingen campus cafeteria I'd like to forecast congestion (more specifically: queue length). The cafeteria opens at 11:30. Say it's 12:30, and I'd like to predict congestion for the remaining open time till 14:30. In my current data, congestion is measured every 5 minutes. 
 
-Before going into details, let me emphasize that these are just preliminary notes, I'm not claiming that I have a complete understanding about available approaches. Please feel free to get in touch if you have any comments!
+Before going into details, let me emphasize that these are just preliminary notes. I don't have a full overview over problem and available approaches yet. Feel free to get in touch if you have any comments!
 
 ## High-level background
 
