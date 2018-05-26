@@ -63,5 +63,3 @@ As two side notes regarding implementation in TF:
 - \[6\]: Arun Venkatraman, Martial Hebert, and J. Andrew Bagnell: Improving Multi-step Prediction of Learned Time Series Models
 - \[7\]: Girard et al.: Gaussian Process Priors With Uncertain Inputs Application to Multiple-Step Ahead Time Series Forecasting
 - \[8\]: https://medium.com/google-cloud/how-to-do-time-series-prediction-using-rnns-and-tensorflow-and-cloud-ml-engine-2ad2eeb189e8
-
-Here's a version
