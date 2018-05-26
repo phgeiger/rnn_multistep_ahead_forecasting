@@ -1,6 +1,6 @@
 """
 Preliminary code for blog post "Implementing time series multi-step ahead forecasts using recurrent neural networks in 
-TensorFlow". See also the README.txt.
+TensorFlow". See also the README.md.
 
 Code/idea sources, among others:
 - https://medium.com/google-cloud/how-to-do-time-series-prediction-using-rnns-and-tensorflow-and-cloud-ml-engine-2ad2eeb189e8
