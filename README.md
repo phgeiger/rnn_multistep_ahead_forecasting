@@ -42,8 +42,6 @@ I implemented a first version of the recursive versus the joint approach in TF a
 
 The recursive approach was a bit more tricky and I haven't found a fully convinccing solution. I used the estimator API of TF. I coded one model function which has two "modes", distinguishable via parameters: (1) a classical 1-step ahead RNN (LSTM, to be specific) and (2) arbitrary steps ahead predictions based on the recursive approach. Then I train the model via (1), store the weights as a checkpoint, and define a new estimator based on the mode (2), but with the weights loaded from the training of (1).
 
-The code is available on GitHub.
-
 A first evaluation shows that the joint approach works better which does not come as a surprise, because what is evaluated is excatly what was trained. Nonetheless, I was surprised how well the recursive approach performed, even though I pretty much did no fine-tuning of hyper-parameters.
 
 As two side notes regarding implementation in TF:
