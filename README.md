@@ -1,7 +1,7 @@
 Introduction
 ===
 
-This repo contains preliminar code for my [blog post on implementing time series multi-step ahead forecasts using recurrent neural networks in TensorFlow](http://geiger.onl/news/blog/2018/05/26/Implementing-time-series-multi-step-ahead-forecasts-using-recurrent-neural-networks-in-TensorFlow.html). A version of this blog can also be found below, see in particular the [high-level code comments](#code).
+This repo contains preliminary code for my [blog post on implementing time series multi-step ahead forecasts using recurrent neural networks in TensorFlow](http://geiger.onl/news/blog/2018/05/26/Implementing-time-series-multi-step-ahead-forecasts-using-recurrent-neural-networks-in-TensorFlow.html). A version of this blog can also be found below, see in particular the [high-level code comments](#code).
 
 
 Content
@@ -20,7 +20,7 @@ Recently I started to use recursive neural networks (RNNs) in TensorFlow (TF) fo
 
 To give a specific example of the problem: for our Max Planck Tuebingen campus cafeteria I'd like to forecast congestion (more specifically: queue length). The cafeteria opens at 11:30. Say it's 12:30, and I'd like to predict congestion for the remaining open time till 14:30. In my current data, congestion is measured every 5 minutes. 
 
-Before going into details, let me emphasize that these are just preliminary notes, I'm not claiming that I have fully understood the problem and available approaches. Please feel free to get in touch if you have any comments!
+Before going into details, let me emphasize that these are just preliminary notes, I'm not claiming that I have a complete understanding about available approaches. Please feel free to get in touch if you have any comments!
 
 ## High-level background
 
