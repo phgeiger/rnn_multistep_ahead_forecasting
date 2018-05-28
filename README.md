@@ -1,7 +1,7 @@
 Introduction
 ===
 
-This repo contains preliminary code for my [blog post on implementing time series multi-step ahead forecasts using recurrent neural networks in TensorFlow](http://geiger.onl/news/blog/2018/05/26/Implementing-time-series-multi-step-ahead-forecasts-using-recurrent-neural-networks-in-TensorFlow.html). A version of this blog can also be found below, see in particular the [high-level code comments](#code).
+This repo contains preliminary code in Python 3 for my [blog post on implementing time series multi-step ahead forecasts using recurrent neural networks in TensorFlow](http://geiger.onl/news/blog/2018/05/26/Implementing-time-series-multi-step-ahead-forecasts-using-recurrent-neural-networks-in-TensorFlow.html). A version of this blog can also be found below, see in particular the [high-level code comments](#code).
 
 
 Content
