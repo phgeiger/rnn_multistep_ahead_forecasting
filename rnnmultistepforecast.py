@@ -23,9 +23,10 @@ import matplotlib.pyplot as plt
 # SETUP AND PARAMS
 
 
-# For reproducibility:
-tf.set_random_seed(43)
-np.random.seed(43)
+# For reproducibility (unfortunately this does not completely eliminate randomness):
+tf.reset_default_graph()
+tf.set_random_seed(1)
+np.random.seed(1)
 
 filename_data = 'daywise_max_planck_cafeteria_data.csv'
 num_training_steps = 20000
