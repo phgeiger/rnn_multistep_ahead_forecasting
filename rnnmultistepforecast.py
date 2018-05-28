@@ -20,8 +20,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-# PARAMS
+# SETUP AND PARAMS
 
+
+# For reproducability:
+tf.set_random_seed(43)
+np.random.seed(43)
 
 filename_data = 'daywise_max_planck_cafeteria_data.csv'
 num_training_steps = 20000
