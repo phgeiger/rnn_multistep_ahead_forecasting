@@ -23,7 +23,7 @@ import matplotlib.pyplot as plt
 # SETUP AND PARAMS
 
 
-# For reproducability:
+# For reproducibility:
 tf.set_random_seed(43)
 np.random.seed(43)
 
