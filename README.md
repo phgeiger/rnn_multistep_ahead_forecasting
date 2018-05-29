@@ -22,7 +22,7 @@ To give a specific example of the problem: for our Max Planck Tuebingen campus c
 
 Before going into details, let me emphasize that these are just preliminary notes. I don't have a full overview over problem and available approaches yet. Feel free to get in touch if you have any comments!
 
-## High-level background
+## High-level background<a name="code" />
 
 It's nice about generative probabilistic/Bayesian model-based inference approaches, such as the classical state space model and corresponding Kalman filter [1], that you learn parameters that encode all possible relationships -- i.e., the joint distribution between all variables. This allows you to derive forecasts for any number of steps ahead in a principled way -- by marginalizing/conditioning.
 
