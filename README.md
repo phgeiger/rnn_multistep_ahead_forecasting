@@ -16,7 +16,7 @@ Blog: Implementing time series multi-step ahead forecasts using recurrent neural
 ===
 
 
-Recently I started to use recursive neural networks (RNNs) in TensorFlow (TF) for time series forecasting. I'd like to perform multistep ahead forecasts and I was wondering how to do this (1) with RNNs in general and (2) in TF in particular. Here I summarize my general understanding, in particular I give a shot overview over some available approaches. Furthermore, I provide [GitHub](code on https://github.com/phgeiger/rnn_multistep_ahead_forecasting) which evaluates two simple approaches on real data.
+Recently I started to use recursive neural networks (RNNs) in TensorFlow (TF) for time series forecasting. Specifically, I'd like to perform multistep ahead forecasts and I was wondering how to do this (1) with RNNs in general and (2) in TF in particular. Here I summarize my insights. In particular I give a short overview over some available approaches. Furthermore, I provide [code on GitHub](https://github.com/phgeiger/rnn_multistep_ahead_forecasting) which evaluates two simple approaches on real data.
 
 To give a specific example of the problem: for our Max Planck Tuebingen campus cafeteria I'd like to forecast congestion (more specifically: queue length). The cafeteria opens at 11:30. Say it's 12:30, and I'd like to predict congestion for the remaining open time till 14:30. In my current data, congestion is measured every 5 minutes.
 
