@@ -22,7 +22,7 @@ To give a specific example of the problem: for our Max Planck Tuebingen campus c
 
 Before going into details, let me emphasize that these are just preliminary notes. I don't have a full overview over problem and available approaches yet. Feel free to get in touch if you have any comments!
 
-## High-level background<a name="code" />
+## High-level background
 
 It's nice about generative probabilistic/Bayesian model-based inference approaches, such as the classical state space model and corresponding Kalman filter [1], that you learn parameters that encode all possible relationships -- i.e., the joint distribution between all variables. This allows you to derive forecasts for any number of steps ahead in a principled way -- by marginalizing/conditioning.
 
@@ -36,7 +36,7 @@ To predict multiple steps ahead using RNNs, various approaches have been propose
 
 Generally, for me it would be interesting if there are other, more principled, approaches, so please get in touch if you know of any.
 
-## Implementation and evaluation in TensorFlow
+## Implementation and evaluation in TensorFlow<a name="code" />
 
 I implemented a first version of the recursive versus the joint approach in TF and applied it to data from our campus cafeteria which I mentioned above. Note that for now, I focused on intra-day forecasts, while the more generic use case for RNNs and the recursive approach would probably be between-day forecasts.
 
